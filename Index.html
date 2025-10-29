@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unban Number Helper - 𝐍𝐎𝐆𝐀𝐌𝐄</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1d3557, #457b9d);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      margin-top: 10px;
+      font-size: 26px;
+      color: #f1faee;
+    }
+
+    .animated-text {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffd60a;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    input, textarea {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #999;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 8px;
+      background-color: #06d6a0;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #00b48a;
+    }
+
+    .whatsapp-buttons button {
+      background-color: #25d366;
+    }
+
+    .footer, .signature {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    #supportEmail:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 id="animatedText" class="animated-text">🚨 👋 Bienvenue sur 𝐍𝐎𝐆𝐀𝐌𝐄 Unban Helper — récupérez facilement votre compte WhatsApp !  🚨</h2>
+
+    <h1>📞 Unban Number Helper</h1>
+    <p>Saisissez votre numéro WhatsApp banni      ci-dessous 👇 </p>
+
+    <input type="number" id="phoneNumber" placeholder="+509XXXXXXXX">
+    <button id="generateBtn">Generate Message</button>
+
+    <textarea id="appealText" readonly placeholder="Votre message d'appel apparaîtra ici.  ..."></textarea>
+
+    <button id="copyBtn">📋 Copier Message</button>
+    <button id="emailBtn">📧 Envoyez Email</button>
+
+    <div class="whatsapp-buttons">
+      <a href="https://whatsapp.com/channel/0029VbBDlbZISTkLX2AUo82m"><button id="joinChannelBtn">📣 Join 𝐍𝐎𝐆𝐀𝐌𝐄 Channel</button></a>
+      <a href="https://wa.me/50943608217"><button id="contactBtn">💬 Contact 𝐍𝐎𝐆𝐀𝐌𝐄</button></a>
+    </div>
+
+    <p class="footer">
+      Send this to 
+      <strong id="supportEmail">support@whatsapp.com</strong>
+    </p>
+
+    <p class="signature">Made by <strong>𝐍𝐎𝐆𝐀𝐌𝐄</strong> 🔥</p>
+  </div>
+
+  <!-- Simplicity: You can attach your app.js script here -->
+  <script src="app.js"></script>
+</body>
+</html>
